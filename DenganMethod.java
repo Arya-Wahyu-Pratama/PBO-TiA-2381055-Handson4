@@ -11,16 +11,20 @@ public class DenganMethod {
 
         tampilkanDetailGaji(gajiPokok, tunjanganTransport, tunjanganMakan, bonus, pajak, Gajibersih);
     }
+
     public static int hitungTotalPenghasilan(int gajiPokok, int tunjangTransport, int tunjanganMakan, int bonus) {
         return gajiPokok + tunjangTransport + tunjanganMakan + bonus;
     }
+
     public static int hitungPajak(int totalPenghasilan) {
         return totalPenghasilan * 30 / 100;
     }
+
     public static int hitungGajiBersih(int totalPenghasilan, int pajak) {
         return totalPenghasilan - pajak;
     }
-    public static int tampilkanDetailGaji(int gajiPokok, int tunjanganTransport, int tunjanganMakan, int bonus, int pajak, int Gajibersih) {
+
+    public static void tampilkanDetailGaji(int gajiPokok, int tunjanganTransport, int tunjanganMakan, int bonus, int pajak, int Gajibersih) {
         System.out.println("Gaji Pokok :" + gajiPokok);
         System.out.println("Tunjangan Transport :" + tunjanganTransport);
         System.out.println("Tunjangan Makan :" + tunjanganMakan);

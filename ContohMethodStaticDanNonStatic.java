@@ -1,5 +1,5 @@
 public class ContohMethodStaticDanNonStatic {
-    public static double hitungluaspersegi(double sisi){
+    public static double hitungluaspersegi(double sisi) {
         return sisi * sisi;
     }
 
@@ -10,7 +10,8 @@ public class ContohMethodStaticDanNonStatic {
         ContohMethodStaticDanNonStatic object = new ContohMethodStaticDanNonStatic();
         object.tampilkanPrsanSelamatDatang("Arya wahyu");
     }
+
     public void tampilkanPrsanSelamatDatang(String nama) {
-        System.out.println(nama);
+        System.out.println("Selamat Datangng " + nama + " !");
     }
 }
